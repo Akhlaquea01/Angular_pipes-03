@@ -1,0 +1,13 @@
+<h1>Pipes</h1>
+
+<p>currentTime: {{timeStamp | date:'short'}}</p>
+<p>currentTime: {{timeStamp | date:'d-MM-y'}}</p>
+<p>currentTime: {{timeStamp | date:'fullDate'}}</p>
+<p>Name:{{name|uppercase}}</p>
+<p>Name:{{name|lowercase}}</p>
+<p>Name:{{name|titlecase}}</p>
+<p>Currency:{{15 |currency :'INR'}}</p>
+<p>Number:{{15 |number:'1.1'}}</p>
+<hr>
+<!-- Custom Pipe -->
+<strong>{{ name | customPipe:15 }}</strong>
